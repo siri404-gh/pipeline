@@ -1,0 +1,12 @@
+{
+  "name": "pipeline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sreerampr/pipeline.git",
+  "author": "Sreeram Padmanabhan <sreeram.com@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
