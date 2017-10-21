@@ -16,17 +16,17 @@ module.exports = function (config) {
         { type: 'lcov', subdir: '.' },
         // { type: 'json', subdir: '.' },
         // { type: 'html', subdir: '.' },
-        { type: 'text-summary'},
+        { type: 'text-summary' },
       ],
       type: 'html',
       dir: karma_coverage_dir
     },
     plugins: [
-        'karma-webpack',
-        'karma-jasmine',
-        'karma-phantomjs-launcher',
-        'karma-coverage',
-        'karma-spec-reporter'
+      'karma-webpack',
+      'karma-jasmine',
+      'karma-phantomjs-launcher',
+      'karma-coverage',
+      'karma-spec-reporter'
     ],
     port: 9876,
     colors: true,
