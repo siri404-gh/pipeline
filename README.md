@@ -7,4 +7,5 @@ The ultimate pipeline boilerplate
 * yarn lint
 * yarn start:web:dev
 * yarn prod
+* yarn firebase
 * yarn travis
