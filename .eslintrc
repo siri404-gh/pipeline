@@ -14,7 +14,8 @@
         ],
         "indent": [
             "error",
-            4
+            2
         ]
-    }
+    },
+    "parser": "babel-eslint"
 }
