@@ -33,6 +33,6 @@
     "start:web:dev": "./node_modules/.bin/webpack-dev-server --env=dev --progress --profile --colors --open",
     "prod": "./node_modules/.bin/webpack --env=prod",
     "firebase": "yarn prod && ./node_modules/.bin/firebase deploy",
-    "travis": "yarn lint && yarn firebase"
+    "travis": "yarn lint"
   }
 }
