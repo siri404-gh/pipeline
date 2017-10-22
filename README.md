@@ -23,3 +23,12 @@ The ultimate pipeline boilerplate
 * docker images
 * docker ps
 * docker stop <container_id>
+
+# Environment variables
+CODECOV_KEY
+DOCKER_PASSWORD
+DOCKER_REPO
+DOCKER_USERNAME
+FIREBASE_TOKEN
+HEROKU_API_KEY
+HEROKU_APP_NAME
