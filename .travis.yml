@@ -11,10 +11,8 @@ before_install:
 cache: yarn
 services:
 - docker
-script:
-- yarn travis
-- ./node_modules/.bin/pa11y-ci --config .pa11yrc
 after_success:
+- yarn firebase-deploy
 - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
 - docker push $DOCKER_REPO;
 - test "$TRAVIS_BRANCH" = "master" && sh deploy_heroku.sh

@@ -58,12 +58,12 @@
     "flow": "./node_modules/.bin/flow",
     "lint": "./node_modules/.bin/eslint .",
     "test": "karma start",
+    "docs": "./node_modules/.bin/esdoc",
+    "pa11y": "./node_modules/.bin/pa11y-ci --config .pa11yrc",
     "prod": "./node_modules/.bin/webpack --env=prod",
     "report-coverage": "codecov -t $CODECOV_KEY",
     "firebase-deploy": "./node_modules/.bin/firebase deploy",
     "firebase": "yarn flow && yarn lint && yarn test && yarn report-coverage && yarn prod && yarn firebase-deploy",
-    "travis": "yarn firebase",
-    "start": "npm run prod && yarn docs && node server/server",
     "cleanup": "./node_modules/.bin/rimraf android/app/src/main/assets ./.prod ./.dist ./.coverage TMPDIR/react-* android ios node_modules && yarn",
     "eject": "react-native eject",
     "bundle": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
@@ -72,7 +72,7 @@
     "start:mobile:dev": "react-native run-android",
     "start:mobile:dev:ios": "react-native run-ios",
     "test:mobile": "./node_modules/.bin/jest",
-    "docs": "./node_modules/.bin/esdoc"
+    "start": "npm run flow && npm run lint && npm run test && npm run report-coverage && npm run pa11y && npm run docs && npm run prod && node server/server"
   },
   "jest": {
     "preset": "react-native",
