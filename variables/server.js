@@ -1,4 +1,4 @@
 module.exports = {
   dist: './.dist',
-  port: 5000
+  port: process.env.PORT || 5000
 };
