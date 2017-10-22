@@ -10,6 +10,12 @@ module.exports = Merge(CommonConfig, {
     new HtmlWebpackPlugin({
       title: htmlTemplateTitle,
       template: htmlTemplateFile
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      },
+      sourceMap: false,
     })
   ]
 });

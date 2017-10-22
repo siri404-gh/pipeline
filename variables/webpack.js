@@ -4,7 +4,7 @@ module.exports = {
   prod: './.prod',
   bundle: 'bundle.js',
   devPort: 4000,
-  karma_coverage_dir: '.coverage/',
+  karma_coverage_dir: './.coverage/',
   logs: './*.log',
   outputFileName: '[name].bundle.js',
   resolveExtensions: ['.js', '.json', '.jsx'],

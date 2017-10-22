@@ -6,13 +6,14 @@
 The ultimate pipeline boilerplate
 
 ## yarn scripts
-*    "start:web:dev": "./node_modules/.bin/webpack-dev-server --env=dev --progress --profile --colors --open",
-*    "lint": "./node_modules/.bin/eslint .",
-*    "test": "karma start",
-*    "prod": "./node_modules/.bin/webpack --env=prod",
-*    "report-coverage": "codecov -t 48525b57-3063-4eb1-add2-057f8d4d57f2",
-*    "firebase": "yarn lint && yarn test && yarn prod && ./node_modules/.bin/firebase deploy && yarn report-coverage",
-*    "travis": "yarn firebase"
+* "start:web:dev": "./node_modules/.bin/webpack-dev-server --env=dev --progress --profile --colors --open",
+* "lint": "./node_modules/.bin/eslint .",
+* "test": "karma start",
+* "prod": "./node_modules/.bin/webpack --env=prod",
+* "report-coverage": "codecov -t $CODECOV_KEY",
+* "firebase": "yarn lint && yarn test && yarn prod && ./node_modules/.bin/firebase deploy && yarn report-coverage",
+* "travis": "yarn firebase",
+* "start": "node server/server"
 
 # Docker commands
 * docker build -t sreeram/pipeline .

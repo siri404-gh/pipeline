@@ -36,6 +36,7 @@
     "react-hot-loader": "^3.1.1",
     "react-redux": "^5.0.6",
     "webpack": "^3.8.1",
+    "webpack-build-notifier": "^0.1.16",
     "webpack-dev-server": "^2.9.3",
     "webpack-manifest-plugin": "^1.3.2",
     "webpack-merge": "^4.1.0"
@@ -45,7 +46,7 @@
     "lint": "./node_modules/.bin/eslint .",
     "test": "karma start",
     "prod": "./node_modules/.bin/webpack --env=prod",
-    "report-coverage": "codecov -t 48525b57-3063-4eb1-add2-057f8d4d57f2",
+    "report-coverage": "codecov -t $CODECOV_KEY",
     "firebase": "yarn lint && yarn test && yarn prod && ./node_modules/.bin/firebase deploy && yarn report-coverage",
     "travis": "yarn firebase",
     "start": "node server/server"

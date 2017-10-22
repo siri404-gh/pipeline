@@ -3,6 +3,7 @@ const path = require('path');
 const Merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CommonConfig = require('./webpack.common.js');
+var WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 
 const { entry, dist, devPort, sourceMapType, outputFileName, htmlTemplateFile, htmlTemplateTitle } = require('../variables/webpack');
 
@@ -33,5 +34,10 @@ module.exports = Merge(CommonConfig, {
       template: htmlTemplateFile
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new WebpackBuildNotifierPlugin({
+      title: "Pipeline Build Status",
+      // logo: path.resolve("./img/favicon.png"),
+      suppressSuccess: true
+    }),
   ]
 });

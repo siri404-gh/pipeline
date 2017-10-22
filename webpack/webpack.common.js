@@ -17,7 +17,14 @@ module.exports = {
     modules: [path.join(__dirname, 'components'), 'node_modules']
   },
   plugins: [
-    new CleanWebpackPlugin([dist, prod, karma_coverage_dir, logs])
+    new CleanWebpackPlugin([ dist, prod, karma_coverage_dir,  logs], {
+      root: path.join(__dirname, '..'),
+      verbose: true,
+      dry: false
+    }),
+    new ManifestPlugin({
+      fileName: '.manifest.json',
+    })
   ],
   module: {
     rules: [
@@ -26,10 +33,5 @@ module.exports = {
   },
   stats: {
     warnings: false
-  },
-  plugins: [
-    new ManifestPlugin({
-      fileName: '.manifest.json',
-    })
-  ]
+  }
 };
