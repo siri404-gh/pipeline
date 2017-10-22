@@ -16,7 +16,7 @@ script:
 - yarn test
 - yarn report-coverage
 - yarn prod
-- ./node_modules/.bin/pa11y-ci --config .pa11yrc
+- yarn pa11y
 - yarn firebase-deploy
 services:
 - docker

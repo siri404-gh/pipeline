@@ -58,10 +58,11 @@
     "flow": "./node_modules/.bin/flow",
     "lint": "./node_modules/.bin/eslint .",
     "test": "karma start",
-    "docs": "./node_modules/.bin/esdoc",
-    "pa11y": "./node_modules/.bin/pa11y-ci --config .pa11yrc",
-    "prod": "./node_modules/.bin/webpack --env=prod",
     "report-coverage": "codecov -t $CODECOV_KEY",
+    "docs": "./node_modules/.bin/esdoc",
+    "prod": "./node_modules/.bin/webpack --env=prod",
+    "start": "npm run prod && node server/server",
+    "pa11y": "./node_modules/.bin/pa11y-ci --config .pa11yrc",
     "firebase-deploy": "./node_modules/.bin/firebase deploy",
     "cleanup": "./node_modules/.bin/rimraf android/app/src/main/assets ./.prod ./.dist ./.coverage TMPDIR/react-* android ios node_modules && yarn",
     "eject": "react-native eject",
@@ -70,8 +71,7 @@
     "start:mobile:server": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
     "start:mobile:dev": "react-native run-android",
     "start:mobile:dev:ios": "react-native run-ios",
-    "test:mobile": "./node_modules/.bin/jest",
-    "start": "node server/server"
+    "test:mobile": "./node_modules/.bin/jest"
   },
   "jest": {
     "preset": "react-native",
