@@ -49,6 +49,6 @@
     "report-coverage": "codecov -t $CODECOV_KEY",
     "firebase": "yarn lint && yarn test && yarn prod && ./node_modules/.bin/firebase deploy && yarn report-coverage",
     "travis": "yarn firebase",
-    "start": "node server/server"
+    "start": "npm run prod && node server/server"
   }
 }

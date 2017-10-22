@@ -14,5 +14,4 @@ RUN npm install --silent
 COPY . .
 
 EXPOSE 5000
-CMD ["npm", "run prod"]
 CMD [ "npm", "start" ]
