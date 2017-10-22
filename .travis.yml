@@ -7,3 +7,13 @@ before_install:
 cache: yarn
 script:
 - yarn travis
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker ps
+
+after_success:
+  - sh docker.sh

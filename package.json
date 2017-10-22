@@ -6,8 +6,7 @@
   "author": "Sreeram Padmanabhan <sreeram.com@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "expect": "^21.2.1",
-    "istanbul": "^0.4.5"
+    "expect": "^21.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -48,6 +47,7 @@
     "prod": "./node_modules/.bin/webpack --env=prod",
     "report-coverage": "codecov -t 48525b57-3063-4eb1-add2-057f8d4d57f2",
     "firebase": "yarn lint && yarn test && yarn prod && ./node_modules/.bin/firebase deploy && yarn report-coverage",
-    "travis": "yarn firebase"
+    "travis": "yarn firebase",
+    "start": "node server/server"
   }
 }
