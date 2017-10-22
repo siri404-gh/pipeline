@@ -1,6 +1,6 @@
 .dist
 .coverage
-
+docs
 # OSX
 .DS_Store
 

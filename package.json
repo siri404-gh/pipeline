@@ -19,6 +19,8 @@
     "body-parser": "^1.18.2",
     "clean-webpack-plugin": "^0.1.17",
     "codecov": "^2.3.1",
+    "esdoc": "^1.0.3",
+    "esdoc-standard-plugin": "^1.0.0",
     "eslint": "^4.9.0",
     "express": "^4.16.2",
     "firebase-tools": "^3.13.1",
@@ -58,7 +60,7 @@
     "firebase-deploy": "./node_modules/.bin/firebase deploy",
     "firebase": "yarn flow && yarn lint && yarn test && yarn report-coverage && yarn prod && yarn firebase-deploy",
     "travis": "yarn firebase",
-    "start": "npm run prod && node server/server",
+    "start": "npm run prod && yarn docs && node server/server",
     "cleanup": "./node_modules/.bin/rimraf android/app/src/main/assets ./.prod ./.dist ./.coverage TMPDIR/react-* android ios node_modules && yarn",
     "eject": "react-native eject",
     "bundle": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
@@ -66,7 +68,8 @@
     "start:mobile:server": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
     "start:mobile:dev": "react-native run-android",
     "start:mobile:dev:ios": "react-native run-ios",
-    "test:mobile": "./node_modules/.bin/jest"
+    "test:mobile": "./node_modules/.bin/jest",
+    "docs": "./node_modules/.bin/esdoc"
   },
   "jest": {
     "preset": "react-native",
