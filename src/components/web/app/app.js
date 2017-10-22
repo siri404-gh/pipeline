@@ -3,7 +3,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        Hello, World again!
+        Hello, Firebase!
       </div>
     );
   }
