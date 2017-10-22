@@ -72,8 +72,7 @@
     "start:mobile:dev": "react-native run-android",
     "start:mobile:dev:ios": "react-native run-ios",
     "test:mobile": "./node_modules/.bin/jest",
-    "docs": "./node_modules/.bin/esdoc",
-    "pa11y": "./node_modules/.bin/pa11y-ci"
+    "docs": "./node_modules/.bin/esdoc"
   },
   "jest": {
     "preset": "react-native",
