@@ -72,7 +72,7 @@
     "start:mobile:dev": "react-native run-android",
     "start:mobile:dev:ios": "react-native run-ios",
     "test:mobile": "./node_modules/.bin/jest",
-    "start": "npm run flow && npm run lint && npm run test && npm run report-coverage && npm run pa11y && npm run docs && npm run prod && node server/server"
+    "start": "npm run flow && npm run lint && npm run test && npm run report-coverage && npm run pa11y && npm run docs && npm run prod && npm run firebase-deploy && node server/server"
   },
   "jest": {
     "preset": "react-native",
