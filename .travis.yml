@@ -14,13 +14,11 @@ before_install:
 
 cache: yarn
 
-script:
-- yarn travis
-
 services:
   - docker
 
 script:
+  - yarn travis
   - docker ps
 
 after_success:
