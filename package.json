@@ -63,6 +63,7 @@
     "prod": "./node_modules/.bin/webpack --env=prod",
     "start": "npm run prod && node server/server",
     "pa11y": "./node_modules/.bin/pa11y-ci --config .pa11yrc --threshold 5",
+    "sitespeed":"./node_modules/.bin/sitespeed.io --outputFolder=sitespeed --config=sitespeed sitespeed.txt",
     "firebase-deploy": "./node_modules/.bin/firebase deploy",
     "cleanup": "./node_modules/.bin/rimraf android/app/src/main/assets ./.prod ./.dist ./.coverage TMPDIR/react-* android ios node_modules && yarn",
     "eject": "react-native eject",

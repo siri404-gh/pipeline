@@ -17,6 +17,7 @@ script:
 - yarn report-coverage
 - yarn prod
 - yarn pa11y
+- yarn sitespeed
 - yarn firebase-deploy
 services:
 - docker

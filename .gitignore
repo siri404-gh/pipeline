@@ -3,6 +3,7 @@
 docs
 # OSX
 .DS_Store
+sitespeed
 
 # Xcode
 build/
