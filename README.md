@@ -20,11 +20,15 @@ The ultimate pipeline boilerplate
 # Docker commands
 * docker build -t sreeram/pipeline .
 * docker run -p 5000:5000 -d sreeram/pipeline
-* docker logs <container_id>
-* docker exec -it <container id> /bin/bash
+* docker logs <containerId>
+* docker exec -it <containerId> /bin/bash
 * docker images
 * docker ps
-* docker stop <container_id>
+* docker stop <containerId>
+* docker ps -aq
+* docker stop $(docker ps -aq)
+* docker rm $(docker ps -aq)
+* docker rmi <imageID>
 
 # Environment variables
 * CODECOV_KEY
