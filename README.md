@@ -27,10 +27,39 @@ The ultimate pipeline boilerplate
 * docker stop <container_id>
 
 # Environment variables
-CODECOV_KEY
-DOCKER_PASSWORD
-DOCKER_REPO
-DOCKER_USERNAME
-FIREBASE_TOKEN
-HEROKU_API_KEY
-HEROKU_APP_NAME
+* CODECOV_KEY
+* DOCKER_PASSWORD
+* DOCKER_REPO
+* DOCKER_USERNAME
+* FIREBASE_TOKEN
+* HEROKU_API_KEY
+* HEROKU_APP_NAME
+
+# Technologies Used
+* Git + Github/Gitlab
+* Node JS
+* Yarn/Npm
+* React
+* React Native
+* Bootstrap
+* Redux
+* JSDoc
+* Express + Morgan
+* Webpack
+* Karma + Jasmine
+* Jest
+* Code Quality Reporting
+* Code Coverage Reporting
+* Travis CI
+* BDD using Cucumber + Browserstack
+* Pa11y Accessibility Testing
+* Sitespeed Performance Testing
+* Firebase Deployment
+* Docker
+* Heroku deployment
+* Slack notification
+* Eslint
+* Editorconfig
+* Google Analytics
+* Google Adsense
+* Google Pagespeed
