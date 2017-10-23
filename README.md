@@ -61,9 +61,9 @@ The ultimate pipeline boilerplate
 * Firebase Deployment
 * Docker
 * Heroku deployment
-* Slack notification
 * Eslint
 * Editorconfig
 * Google Analytics
 * Google Adsense
 * Google Pagespeed
+* Slack notification from - Github/Travis/Docker/Heroku
